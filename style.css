@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha ao topo */
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #E91E63; /* Rosa */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 40px; /* Espaço entre o cabeçalho e o conteúdo */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Seção Sobre o Evento */
+#sobre {
+    background-color: white;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#sobre h2 {
+    color: #3498db; /* Azul */
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+/* Seção Palestrantes */
+#palestrantes {
+    background-color: white;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.palestrante {
+    width: 200px;
+    max-width: 45%;
+    margin-bottom: 20px; /* Espaço entre os palestrantes */
+}
+
+.palestrante img {
+    width: 100%;
+    height: 150px; /* Define a altura das imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.palestrante h3 {
+    color: #E91E63; /* Rosa */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.palestrante p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Seção Formulário de Inscrição */
+#inscricao {
+    background-color: white;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#inscricao h2 {
+    color: #3498db; /* Azul */
+    margin-bottom: 20px;
+}
+
+#inscricao label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#inscricao input[type="text"],
+#inscricao input[type="email"],
+#inscricao input[type="radio"],
+#inscricao input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#inscricao button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#inscricao button:hover {
+    background-color: #2980b9; /* Azul mais escuro no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #E91E63; /* Rosa */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    /* Ajusta as seções para telas menores */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #sobre p, #palestrantes .palestrante p {
+        font-size: 1rem;
+    }
+
+    
+    #palestrantes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .palestrante {
+        width: 80%;
+    }
+}

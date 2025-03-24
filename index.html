@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConnect - Evento de Tecnologia e Design</title>
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechConnect - Evento de Tecnologia e Design</h1>
+        <p>Um encontro para desenvolvedores e designers discutirem as últimas tendências.</p>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p>Data: 10 de Abril de 2025</p>
+        <p>Local: Centro de Convenções TechCenter, São Paulo, SP</p>
+        <p>Resumo: Vamos discutir as mais recentes inovações em tecnologia e design, com palestras e workshops de especialistas renomados.</p>
+    </section>
+
+    <section id="palestrantes">
+        <h2>Palestrantes</h2>
+        <div class="palestrante">
+            <img src="img/Ana.jpg" alt="Ana Silva">
+            <h3>Ana Silva</h3>
+            <p>Especialista em Design UX/UI com mais de 10 anos de experiência.</p>
+        </div>
+        <div class="palestrante">
+            <img src="img/Carlos.jpg" alt="Carlos Oliveira">
+            <h3>Carlos Oliveira</h3>
+            <p>Desenvolvedor Front-End, apaixonado por novas tecnologias e inovação.</p>
+        </div>
+    </section>
+
+    <section id="inscricao">
+        <h2>Faça sua Inscrição</h2>
+        <form action="#">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Tipo de ingresso</label>
+            <input type="radio" id="presencial" name="ingresso" value="presencial" required>
+            <label for="presencial">Presencial</label>
+            <input type="radio" id="online" name="ingresso" value="online" required>
+            <label for="online">Online</label>
+
+            <label for="termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                Aceito os termos de participação
+            </label>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TechConnect - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
